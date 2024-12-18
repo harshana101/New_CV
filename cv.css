@@ -1,0 +1,46 @@
+/* A4 Page Formatting for Print */
+@page {
+  size: A4;
+  margin: 20mm;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Print-specific settings */
+@media print {
+  .cv-container {
+    box-shadow: none;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .left-sidebar {
+    background: #222;
+    color: #fff;
+  }
+
+  .right-content {
+    padding: 15px;
+  }
+
+  .description {
+    background: #039BE5;
+    color: #fff;
+    padding: 5px 20px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .bottom {
+    margin-top: 50px;
+    text-align: left;
+  }
+}
